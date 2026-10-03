@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rover robot · Mehdi Bouin</title>
+
+<script>
+(function(){var s=localStorage.getItem('mq-theme');if(s)document.documentElement.setAttribute('data-theme',s);})();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../../style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+
+</head>
+
+<body>
+
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+  <nav class="topnav">
+    <div class="topnav-inner">
+
+  <a href="../index.html" class="logo">mehdiqament.dev</a>
+
+  <div class="nav-links hide-sm">
+    <a href="../index.html" class="nav-link">Home</a>
+    <a href="../competences.html" class="nav-link">Skills</a>
+    <a href="../parcours.html" class="nav-link">Journey</a>
+    <a href="../projets.html" class="nav-link">Projects</a>
+    <a href="../stage.html" class="nav-link">Internship</a>
+    <a href="../contact.html" class="nav-link">Contact</a>
+    <a href="../a-propos.html" class="nav-link">About</a>
+  </div>
+
+  <div class="nav-controls">
+
+    <a href="../../projets/robot-sti2d.html" class="lang-switch" aria-label="Changer de langue / Switch language">FR</a>
+
+    <button type="button" class="theme-toggle"
+      aria-label="Toggle light/dark theme"
+      onclick="var d=document.documentElement,c=d.getAttribute('data-theme'),sys=matchMedia('(prefers-color-scheme: dark)').matches,cur=c||(sys?'dark':'light'),n=cur==='dark'?'light':'dark';d.setAttribute('data-theme',n);localStorage.setItem('mq-theme',n);">
+      ◐
+    </button>
+
+    <label for="menu-toggle" class="hamburger-btn" aria-label="Menu"><span></span></label>
+
+  </div>
+</div>
+
+<div class="mobile-menu">
+  <a href="../index.html" class="nav-link">Home</a>
+  <a href="../competences.html" class="nav-link">Skills</a>
+  <a href="../parcours.html" class="nav-link">Journey</a>
+  <a href="../projets.html" class="nav-link">Projects</a>
+  <a href="../stage.html" class="nav-link">Internship</a>
+  <a href="../contact.html" class="nav-link">Contact</a>
+  <a href="../a-propos.html" class="nav-link">About</a>
+</div>
+
+  </nav>
+
+<main>
+
+<article class="detail-article">
+
+  <div class="detail-inner">
+
+<a href="../projets.html" class="back-link">← Projects</a>
+
+<div class="detail-kicker">
+  STI2D final year · SIN option · Team project
+</div>
+
+<h1 class="detail-title">Rover robot 🤖</h1>
+
+<div class="detail-tags">
+
+  <div class="detail-tag">
+    <span class="abbr">SIN</span>Information and Digital Systems
+  </div>
+
+  <div class="detail-tag">
+    <span class="abbr">∞</span>Arduino
+  </div>
+
+  <div class="detail-tag">
+    <span class="abbr">🤖</span>Robotics
+  </div>
+
+</div>
+
+<div class="divider"></div>
+
+<div class="detail-block">
+
+  <div class="label">The project</div>
+
+  <p>
+    Project carried out during my <strong>final year of STI2D</strong>,
+    SIN option, around the design and programming of a mobile rover
+    inspired by exploration robots such as <strong>Perseverance</strong>.
+  </p>
+
+  <p>
+    The rover could <strong>move forward and backward</strong> while
+    turning left or right. It was controlled from an
+    <strong>Android phone</strong> via <strong>Bluetooth</strong>, using
+    an application that allowed the user to control its movements, arm
+    and gripper, as well as display data collected from its sensors.
+  </p>
+
+  <p>
+    The rover featured an <strong>articulated arm</strong> made up of
+    several sections powered by <strong>servo motors</strong>. The arm
+    could rotate, move up and down, while a <strong>gripper</strong>
+    allowed it to pick up a small object.
+  </p>
+
+  <p>
+    Several sensors were used to measure
+    <strong>temperature</strong>, <strong>humidity</strong> and
+    <strong>battery level</strong>. An air quality measurement feature
+    was also considered but could not be added due to time constraints.
+  </p>
+
+  <p>
+    The project was designed to allow the rover to move around and
+    <strong>pick up a small object</strong> during the final demonstration.
+  </p>
+
+</div>
+
+<div class="detail-block">
+
+  <div class="label">Team roles</div>
+
+  <ul class="feature-list">
+
+    <li>
+      <strong>Programming (2 people)</strong> - rover programming and
+      application development.
+    </li>
+
+    <li>
+      <strong>Me</strong> - programming the arm and gripper, managing
+      the sensors, and developing the application features used to
+      control them and display their data.
+    </li>
+
+    <li>
+      <strong>My teammate</strong> - programming the rover's movement.
+    </li>
+
+    <li>
+      <strong>Design (2 people)</strong> - design and construction of
+      the rover's structure.
+    </li>
+
+    <li>
+      <strong>Electrics (1 person)</strong> - wiring and management of
+      the project's electrical components.
+    </li>
+
+  </ul>
+
+</div>
+
+<div class="detail-block">
+
+  <div class="label">What I did</div>
+
+  <ul class="feature-list">
+
+    <li>
+      Programmed the <strong>arm movements</strong> in
+      <strong>Arduino</strong> using servo motors.
+    </li>
+
+    <li>
+      Managed the arm's rotation as well as its
+      <strong>upward and downward movements</strong>.
+    </li>
+
+    <li>
+      Programmed the <strong>opening and closing of the gripper</strong>.
+    </li>
+
+    <li>
+      Integrated arm and gripper control into the
+      <strong>Android application</strong>.
+    </li>
+
+    <li>
+      Managed and displayed data from the
+      <strong>sensors</strong>: temperature, humidity and battery level.
+    </li>
+
+    <li>
+      Worked on part of the <strong>wiring</strong> required for the
+      arm and sensors.
+    </li>
+
+    <li>
+      Established communication between the Android application and the
+      <strong>Arduino Uno</strong> via Bluetooth.
+    </li>
+
+    <li>
+      Performed tests and adjustments to ensure the proper operation of
+      the arm, gripper and sensors.
+    </li>
+
+  </ul>
+
+</div>
+
+<div class="detail-block">
+
+  <div class="label">What I learned</div>
+
+  <p>
+    This project was one of my first projects of this scale and gave me
+    valuable experience in <strong>electronics</strong> and
+    <strong>wiring</strong>. The first stages were challenging,
+    particularly when learning how the different components worked and
+    how to connect them to the program.
+  </p>
+
+  <p>
+    Through testing and adjustments throughout the project, I gradually
+    gained a better understanding of the arm and sensor systems. Seeing
+    the arm work correctly and being able to control the different
+    components through the application was one of the most rewarding
+    parts of the project.
+  </p>
+
+</div>
+
+  </div>
+
+</article>
+
+</main>
+
+<footer>
+  <span>mehdiqament.dev · 2026</span>
+</footer>
+
+</body>
+</html>

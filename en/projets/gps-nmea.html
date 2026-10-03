@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GPS NMEA project · Mehdi Bouin</title>
+<script>
+(function(){var s=localStorage.getItem('mq-theme');if(s)document.documentElement.setAttribute('data-theme',s);})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../../style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+</head>
+<body>
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  <nav class="topnav">
+    <div class="topnav-inner">
+      <a href="../index.html" class="logo">mehdiqament.dev</a>
+      <div class="nav-links hide-sm">
+      <a href="../index.html" class="nav-link">Home</a>
+      <a href="../competences.html" class="nav-link">Skills</a>
+      <a href="../parcours.html" class="nav-link">Journey</a>
+      <a href="../projets.html" class="nav-link">Projects</a>
+      <a href="../stage.html" class="nav-link">Internship</a>
+      <a href="../contact.html" class="nav-link">Contact</a>
+      <a href="../a-propos.html" class="nav-link">About</a>
+      </div>
+      <div class="nav-controls">
+        <a href="../../projets/gps-nmea.html" class="lang-switch" aria-label="Changer de langue / Switch language">FR</a>
+        <button type="button" class="theme-toggle" aria-label="Basculer le thème clair/sombre" onclick="var d=document.documentElement,c=d.getAttribute('data-theme'),sys=matchMedia('(prefers-color-scheme: dark)').matches,cur=c||(sys?'dark':'light'),n=cur==='dark'?'light':'dark';d.setAttribute('data-theme',n);localStorage.setItem('mq-theme',n);">◐</button>
+        <label for="menu-toggle" class="hamburger-btn" aria-label="Menu"><span></span></label>
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <a href="../index.html" class="nav-link">Home</a>
+      <a href="../competences.html" class="nav-link">Skills</a>
+      <a href="../parcours.html" class="nav-link">Journey</a>
+      <a href="../projets.html" class="nav-link">Projects</a>
+      <a href="../stage.html" class="nav-link">Internship</a>
+      <a href="../contact.html" class="nav-link">Contact</a>
+      <a href="../a-propos.html" class="nav-link">About</a>
+    </div>
+  </nav>
+<main>
+
+<article class="detail-article">
+  <div class="detail-inner">
+    <a href="../projets.html" class="back-link">← Projects</a>
+
+    <div class="detail-kicker">R2.04 · School project</div>
+    <h1 class="detail-title">GPS NMEA frame<br>analyzer</h1>
+
+    <div class="detail-tags"><div class="detail-tag"><span class="abbr">©</span>C</div><div class="detail-tag"><span class="abbr">$_</span>Shell</div><div class="detail-tag"><span class="abbr">mk</span>Makefile</div></div>
+
+    <div class="detail-actions">
+      <a href="https://github.com/mehdiqament/Sujet1_Yahyaoui-Benataya_Bouin/tree/master/projet_gps" target="_blank" rel="noopener noreferrer" class="btn-code">&lt;/&gt; View code</a>
+      <a href="#demo" class="btn-code">▶ Watch the test</a>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="detail-block">
+      <div class="label">The project</div>
+      <p>Built as part of a SAÉ (Learning and Assessment Situation), this project implements a GPS NMEA frame parser in C. It reads frames from a GPS receiver, checks their integrity via checksum, then extracts and formats the position and time data contained in the <strong>$GPRMC</strong> and <strong>$GPGGA</strong> formats.</p>
+    </div>
+
+    <div class="detail-block">
+      <div class="label">Features</div>
+      <ul class="feature-list"><li>Validation of NMEA frames (checksum, format)</li><li>Extraction and decoding of fields from $GPRMC and $GPGGA frames</li><li>Conversion of GPS coordinates from NMEA format (degrees-minutes) to decimal degrees</li><li>Formatting and display of UTC time</li></ul>
+    </div>
+
+    <div class="detail-block">
+      <div class="label">Tech stack</div>
+      <div style="display:flex; flex-wrap:wrap; gap:0.75rem;"><div class="skill-pill-lg"><span class="abbr">©</span>C</div><div class="skill-pill-lg"><span class="abbr">$_</span>Shell</div><div class="skill-pill-lg"><span class="abbr">mk</span>Makefile</div></div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="detail-block">
+      <div class="label">Demo</div>
+      <div id="demo">
+        <div class="demo-frame">
+          <iframe src="https://player.cloudinary.com/embed/?cloud_name=dk2iacpoa&public_id=rec_c_mqebm0&profile=cld-default" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
+        <div class="demo-caption"><p>Demo of the GPS NMEA parser in action: reading frames, checking checksums and extracting position and time data.</p></div>
+      </div>
+    </div>
+
+    <div class="detail-block">
+      <div class="label">What the video shows</div>
+      <ul class="feature-list"><li>Reading GPS NMEA frames from an input file.</li><li>Checksum verification for each received frame.</li><li>Extraction of position fields from $GPRMC and $GPGGA frames.</li><li>Conversion of coordinates from degrees-minutes format to decimal degrees.</li><li>Formatted display of UTC time extracted from the frames.</li></ul>
+    </div>
+  </div>
+</article>
+
+</main>
+<footer><span>mehdiqament.dev · 2026</span></footer>
+</body>
+</html>

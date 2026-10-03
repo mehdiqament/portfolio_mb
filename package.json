@@ -1,0 +1,7 @@
+{
+  "name": "site-port-mb",
+  "private": true,
+  "dependencies": {
+    "@vercel/blob": "^2.3.0"
+  }
+}

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stage · Mehdi Bouin</title>
+<script>
+(function(){var s=localStorage.getItem('mq-theme');if(s)document.documentElement.setAttribute('data-theme',s);})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+<meta name="description" content="Mehdi Bouin recherche un stage de 8 à 12 semaines en développement (web, applications, logiciel) à Toulouse, dès avril 2027.">
+<meta property="og:title" content="Stage · Mehdi Bouin">
+<meta property="og:description" content="Recherche de stage en développement (web, applications, logiciel), disponible dès avril 2027.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mehdiqament.dev/stage.html">
+<!-- Intégration de la bibliothèque EmailJS pour l'envoi de mail direct -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function() {
+      emailjs.init("LJpYeWN1PGNI5SVwO");
+  })();
+</script>
+
+<script>
+  var cvWidgetId, emailWidgetId;
+
+  window.onRecaptchaLoad = function() {
+    cvWidgetId = grecaptcha.render('cv-recaptcha', { sitekey: '6LfkmtAtAAAAAFMwcnbOo14DE1mSoKw6j-sHlGbF' });
+    emailWidgetId = grecaptcha.render('email-recaptcha', { sitekey: '6LfkmtAtAAAAAFMwcnbOo14DE1mSoKw6j-sHlGbF' });
+  };
+</script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onRecaptchaLoad&render=explicit" async defer></script>
+</head>
+<body>
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  <nav class="topnav">
+    <div class="topnav-inner">
+      <a href="index.html" class="logo">mehdiqament.dev</a>
+      <div class="nav-links hide-sm">
+      <a href="index.html" class="nav-link">Accueil</a>
+      <a href="competences.html" class="nav-link">Compétences</a>
+      <a href="parcours.html" class="nav-link">Parcours</a>
+      <a href="projets.html" class="nav-link">Projets</a>
+      <a href="stage.html" class="nav-link active">Stage</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="a-propos.html" class="nav-link">À propos</a>
+      </div>
+      <div class="nav-controls">
+        <a href="en/stage.html" class="lang-switch" aria-label="Changer de langue / Switch language">EN</a>
+        <button type="button" class="theme-toggle" aria-label="Basculer le thème clair/sombre" onclick="var d=document.documentElement,c=d.getAttribute('data-theme'),sys=matchMedia('(prefers-color-scheme: dark)').matches,cur=c||(sys?'dark':'light'),n=cur==='dark'?'light':'dark';d.setAttribute('data-theme',n);localStorage.setItem('mq-theme',n);">◐</button>
+        <label for="menu-toggle" class="hamburger-btn" aria-label="Menu"><span></span></label>
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <a href="index.html" class="nav-link">Accueil</a>
+      <a href="competences.html" class="nav-link">Compétences</a>
+      <a href="parcours.html" class="nav-link">Parcours</a>
+      <a href="projets.html" class="nav-link">Projets</a>
+      <a href="stage.html" class="nav-link active">Stage</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="a-propos.html" class="nav-link">À propos</a>
+    </div>
+  </nav>
+<main>
+
+<section class="section">
+  <div class="container">
+    <div class="section-label">Objectif</div>
+    <h2 class="section-title">Stage</h2>
+
+    <div class="alternance-grid">
+      <div class="alternance-text">
+        <p>Actuellement en BUT Informatique, je recherche un <strong>stage de 8 à 12 semaines</strong> en <strong>développement (web, applications, logiciel)</strong> dans le cadre de mon parcours RAPP. Si le stage se passe bien, je serais également intéressé par une <strong>alternance ou un stage en 3ème année</strong>.</p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <button type="button" class="btn-primary" onclick="openCvModal()">⭳ Télécharger mon CV</button>
+          <button type="button" class="btn-ghost" onclick="openEmailModal()">Demander par e-mail</button>
+        </div>
+      </div>
+      <div class="alternance-cards">
+        <div class="info-card"><div class="label">Durée recherchée</div><div class="value">8 à 12 semaines</div></div>
+        <div class="info-card"><div class="label">Domaine</div><div class="value">Développement web &amp; applications · RAPP</div></div>
+        <div class="info-card"><div class="label">Localisation</div><div class="value">Toulouse & région</div></div>
+        <div class="info-card"><div class="label">Disponibilité</div><div class="value">Dès avril 2027</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modale Mot de passe -->
+<div id="cvModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); backdrop-filter:blur(5px); z-index:1000; align-items:center; justify-content:center;">
+  <div style="background:var(--card-bg); border:0.5px solid rgba(var(--border-rgb),0.2); padding:2rem; width:100%; max-width:400px; box-shadow:0 4px 20px rgba(0,0,0,0.15);">
+    <h3 style="margin-top:0; font-family:var(--sans); font-weight:500; color:var(--black);">Accès sécurisé au CV</h3>
+    <p style="font-size:0.875rem; color:var(--gray-600); margin-bottom:1.5rem;">Entrez le mot de passe requis pour lancer le téléchargement :</p>
+    <input type="password" id="cvPassword" placeholder="Mot de passe" style="width:100%; padding:0.75rem; font-family:inherit; border:0.5px solid rgba(var(--border-rgb),0.2); background:var(--bg); color:var(--black); margin-bottom:1rem; outline:none;">
+    <div style="margin-bottom:1.25rem; display:flex; justify-content:center;">
+      <div id="cv-recaptcha"></div>
+    </div>
+    <div style="display:flex; justify-content:flex-end; gap:0.5rem;">
+      <button type="button" class="btn-ghost" onclick="closeCvModal()" style="padding:0.5rem 1rem;">Annuler</button>
+      <button type="button" class="btn-primary" onclick="verifyPassword()" style="padding:0.5rem 1rem;">Valider</button>
+    </div>
+    <p id="errorMsg" style="color:#ef4444; font-size:0.75rem; margin-top:0.75rem; display:none;">Mot de passe incorrect.</p>
+  </div>
+</div>
+
+<!-- Modale Demande par mail (Formulaire direct) -->
+<div id="emailModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); backdrop-filter:blur(5px); z-index:1000; align-items:center; justify-content:center;">
+  <div style="background:var(--card-bg); border:0.5px solid rgba(var(--border-rgb),0.2); padding:2rem; width:100%; max-width:420px; box-shadow:0 4px 20px rgba(0,0,0,0.15);">
+    <h3 style="margin-top:0; font-family:var(--sans); font-weight:500; color:var(--black);">Demande d'accès au CV</h3>
+    <p style="font-size:0.875rem; color:var(--gray-600); margin-bottom:1.25rem;">Remplissez ce formulaire pour m'envoyer votre demande :</p>
+    
+    <div style="margin-bottom:0.875rem;">
+      <label style="display:block; font-size:0.75rem; font-family:var(--mono); color:var(--gray-600); margin-bottom:0.25rem; text-transform:uppercase;">Votre e-mail :</label>
+      <input type="email" id="reqEmail" placeholder="recruteur@entreprise.com" style="width:100%; padding:0.65rem; font-family:inherit; border:0.5px solid rgba(var(--border-rgb),0.2); background:var(--bg); color:var(--black); outline:none;">
+    </div>
+
+    <div style="margin-bottom:0.875rem;">
+      <label style="display:block; font-size:0.75rem; font-family:var(--mono); color:var(--gray-600); margin-bottom:0.25rem; text-transform:uppercase;">Titre / Objet :</label>
+      <input type="text" id="reqSubject" placeholder="Demande de CV - Stage Informatique" style="width:100%; padding:0.65rem; font-family:inherit; border:0.5px solid rgba(var(--border-rgb),0.2); background:var(--bg); color:var(--black); outline:none;">
+    </div>
+
+    <div style="margin-bottom:1rem;">
+      <label style="display:block; font-size:0.75rem; font-family:var(--mono); color:var(--gray-600); margin-bottom:0.25rem; text-transform:uppercase;">Votre message :</label>
+      <textarea id="reqMessage" rows="3" placeholder="Bonjour Mehdi, je souhaite obtenir votre CV pour..." style="width:100%; padding:0.65rem; font-family:inherit; border:0.5px solid rgba(var(--border-rgb),0.2); background:var(--bg); color:var(--black); outline:none; resize:none;"></textarea>
+    </div>
+
+    <!-- reCAPTCHA -->
+    <div style="margin-bottom:1.25rem; display:flex; justify-content:center;">
+      <div id="email-recaptcha"></div>
+    </div>
+
+    <div style="display:flex; justify-content:flex-end; gap:0.5rem;">
+      <button type="button" class="btn-ghost" onclick="closeEmailModal()" style="padding:0.5rem 1rem;">Annuler</button>
+      <button type="button" class="btn-primary" onclick="sendEmailRequest()" style="padding:0.5rem 1rem;">Envoyer</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  function openCvModal() {
+    document.getElementById('cvModal').style.display = 'flex';
+  }
+
+  function closeCvModal() {
+    document.getElementById('cvModal').style.display = 'none';
+    document.getElementById('cvPassword').value = '';
+    document.getElementById('errorMsg').style.display = 'none';
+  }
+
+  function openEmailModal() {
+    document.getElementById('emailModal').style.display = 'flex';
+  }
+
+  function closeEmailModal() {
+    document.getElementById('emailModal').style.display = 'none';
+  }
+
+  async function verifyPassword() {
+    var pass = document.getElementById('cvPassword').value;
+    var errorMsg = document.getElementById('errorMsg');
+    errorMsg.style.display = 'none';
+
+    var recaptchaToken = grecaptcha.getResponse(cvWidgetId);
+    if (!recaptchaToken) {
+      alert("Veuillez cocher la case « Je ne suis pas un robot ».");
+      return;
+    }
+
+    try {
+      const res = await fetch('/api/get-cv', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ password: pass, recaptchaToken })
+      });
+
+      if (!res.ok) {
+        errorMsg.style.display = 'block';
+        grecaptcha.reset(cvWidgetId);
+        return;
+      }
+
+      const blob = await res.blob();
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'CV_Bouin_Mehdi.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+      closeCvModal();
+      grecaptcha.reset(cvWidgetId);
+    } catch (err) {
+      errorMsg.style.display = 'block';
+      grecaptcha.reset(cvWidgetId);
+    }
+  }
+
+  async function sendEmailRequest() {
+    var email = document.getElementById('reqEmail').value.trim();
+    var subject = document.getElementById('reqSubject').value.trim() || "Demande de CV - Stage";
+    var message = document.getElementById('reqMessage').value.trim();
+
+    if (!email || !email.includes('@')) {
+      alert("Veuillez renseigner une adresse e-mail valide.");
+      return;
+    }
+
+    // Vérification reCAPTCHA
+    var recaptchaResponse = grecaptcha.getResponse(emailWidgetId);
+    if (!recaptchaResponse) {
+      alert("Veuillez cocher la case « Je ne suis pas un robot ».");
+      return;
+    }
+
+    try {
+      await emailjs.send(
+        'service_suupx7v',
+        'template_uhld07q',
+        {
+          user_email: email,
+          user_subject: subject,
+          user_message: message,
+          time: new Date().toLocaleString('fr-FR'),
+          'g-recaptcha-response': recaptchaResponse
+        }
+      );
+
+      alert("Votre demande a bien été envoyée.");
+      closeEmailModal();
+      grecaptcha.reset(emailWidgetId);
+
+    } catch (error) {
+      console.error("Erreur EmailJS :", error);
+      alert("Impossible d'envoyer la demande. Réessayez plus tard.");
+      grecaptcha.reset(emailWidgetId);
+    }
+  }
+</script>
+
+</main>
+<footer><span>mehdiqament.dev · 2026</span></footer>
+</body>
+</html>

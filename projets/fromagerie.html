@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fromagerie · Mehdi Bouin</title>
+<script>
+(function(){var s=localStorage.getItem('mq-theme');if(s)document.documentElement.setAttribute('data-theme',s);})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+</head>
+<body>
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  <nav class="topnav">
+    <div class="topnav-inner">
+      <a href="../index.html" class="logo">mehdiqament.dev</a>
+      <div class="nav-links hide-sm">
+      <a href="../index.html" class="nav-link">Accueil</a>
+      <a href="../competences.html" class="nav-link">Compétences</a>
+      <a href="../parcours.html" class="nav-link">Parcours</a>
+      <a href="../projets.html" class="nav-link">Projets</a>
+      <a href="../stage.html" class="nav-link">Stage</a>
+      <a href="../contact.html" class="nav-link">Contact</a>
+      <a href="../a-propos.html" class="nav-link">À propos</a>
+      </div>
+      <div class="nav-controls">
+        <a href="../en/projets/fromagerie.html" class="lang-switch" aria-label="Changer de langue / Switch language">EN</a>
+        <button type="button" class="theme-toggle" aria-label="Basculer le thème clair/sombre" onclick="var d=document.documentElement,c=d.getAttribute('data-theme'),sys=matchMedia('(prefers-color-scheme: dark)').matches,cur=c||(sys?'dark':'light'),n=cur==='dark'?'light':'dark';d.setAttribute('data-theme',n);localStorage.setItem('mq-theme',n);">◐</button>
+        <label for="menu-toggle" class="hamburger-btn" aria-label="Menu"><span></span></label>
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <a href="../index.html" class="nav-link">Accueil</a>
+      <a href="../competences.html" class="nav-link">Compétences</a>
+      <a href="../parcours.html" class="nav-link">Parcours</a>
+      <a href="../projets.html" class="nav-link">Projets</a>
+      <a href="../stage.html" class="nav-link">Stage</a>
+      <a href="../contact.html" class="nav-link">Contact</a>
+      <a href="../a-propos.html" class="nav-link">À propos</a>
+    </div>
+  </nav>
+<main>
+
+<article class="detail-article">
+  <div class="detail-inner">
+    <a href="../projets.html" class="back-link">← Projets</a>
+
+    <div class="detail-kicker">SAÉ · Projet scolaire</div>
+    <h1 class="detail-title">Application de vente<br>Fromagerie 🧀</h1>
+
+    <div class="detail-tags"><div class="detail-tag"><span class="abbr">☕</span>Java</div><div class="detail-tag"><span class="abbr">UI</span>Swing</div><div class="detail-tag"><span class="abbr">{}</span>JSON</div></div>
+
+    <div class="detail-actions">
+      <a href="https://github.com/mehdiqament/sae-vente-fromages" target="_blank" rel="noopener noreferrer" class="btn-code">&lt;/&gt; Voir le code</a>
+      <a href="#demo" class="btn-code">▶ Voir le test</a>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="detail-block">
+      <div class="label">Le projet</div>
+      <p>Réalisée dans le cadre d'une SAÉ (Situation d'Apprentissage et d'Évaluation), cette application simule une boutique en ligne de fromages. Développée entièrement en Java avec l'interface graphique Swing, elle repose sur une architecture multi-fenêtres utilisant des <strong>JDialog</strong> imbriquées pour chaque étape du parcours client - navigation du catalogue, gestion du panier, saisie des informations et édition de la facture.</p>
+    </div>
+
+    <div class="detail-block">
+      <div class="label">Fonctionnalités</div>
+      <ul class="feature-list"><li>Catalogue de fromages avec filtres par type de lait et format (demi / entier)</li><li>Panier d'achat avec respect des limites de stock et options de modification ou vidage</li><li>Formulaire de saisie des informations client</li><li>Génération de facture récapitulative avec option d'impression</li></ul>
+    </div>
+
+    <div class="detail-block">
+      <div class="label">Stack technique</div>
+      <div style="display:flex; flex-wrap:wrap; gap:0.75rem;"><div class="skill-pill-lg"><span class="abbr">☕</span>Java</div><div class="skill-pill-lg"><span class="abbr">UI</span>Swing</div><div class="skill-pill-lg"><span class="abbr">{}</span>JSON</div></div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="detail-block">
+      <div class="label">Démonstration</div>
+      <div id="demo">
+        <div class="demo-frame">
+          <iframe src="https://player.cloudinary.com/embed/?cloud_name=dk2iacpoa&public_id=rec_java_bj1zz2&profile=cld-default" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
+        <div class="demo-caption"><p>Démonstration de l'interface de commande de fromage en action : gestion du panier, calcul des frais de port et validation du formulaire client.</p></div>
+      </div>
+    </div>
+
+    <div class="detail-block">
+      <div class="label">Ce que montre la vidéo</div>
+      <ul class="feature-list"><li>Panier vide : un message s'affiche automatiquement si le panier est vide lors de la validation.</li><li>Trois types de fromages disponibles : vache, chèvre et brebis.</li><li>Stock limité : un message d'avertissement s'affiche si la quantité demandée dépasse le stock, et la mention « Rupture » apparaît lorsque le stock atteint zéro.</li><li>Modification de quantité dans le panier : le stock du fromage correspondant se met à jour en temps réel.</li><li>Frais de port : offerts pour toute commande supérieure à 120 €, sinon des frais s'appliquent.</li><li>Trois expéditeurs disponibles : Chronorelais, Chronofresh et Colissimo.</li><li>Formulaire client complet : nom, prénom, adresse, code postal, ville, téléphone, e-mail, mode de paiement et inscription à la newsletter.</li><li>Fenêtre facture : récapitulatif complet avec coordonnées, contenu du panier, montant des fromages et frais de port si la commande est inférieure à 120 €.</li><li>Interface responsive : toutes les fenêtres s'adaptent à la taille de l'écran.</li></ul>
+    </div>
+  </div>
+</article>
+
+</main>
+<footer><span>mehdiqament.dev · 2026</span></footer>
+</body>
+</html>

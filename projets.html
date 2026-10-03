@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projets · Mehdi Bouin</title>
+<script>
+(function(){var s=localStorage.getItem('mq-theme');if(s)document.documentElement.setAttribute('data-theme',s);})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+<meta name="description" content="Projets universitaires de Mehdi Bouin : application Java, analyse de trames GPS et autres réalisations en BUT Informatique.">
+<meta property="og:title" content="Projets · Mehdi Bouin">
+<meta property="og:description" content="Projets réalisés en BUT Informatique : Java, Python, développement web.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mehdiqament.dev/projets.html">
+</head>
+<body>
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  <nav class="topnav">
+    <div class="topnav-inner">
+      <a href="index.html" class="logo">mehdiqament.dev</a>
+      <div class="nav-links hide-sm">
+      <a href="index.html" class="nav-link">Accueil</a>
+      <a href="competences.html" class="nav-link">Compétences</a>
+      <a href="parcours.html" class="nav-link">Parcours</a>
+      <a href="projets.html" class="nav-link active">Projets</a>
+      <a href="stage.html" class="nav-link">Stage</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="a-propos.html" class="nav-link">À propos</a>
+      </div>
+      <div class="nav-controls">
+        <a href="en/projets.html" class="lang-switch" aria-label="Changer de langue / Switch language">EN</a>
+        <button type="button" class="theme-toggle" aria-label="Basculer le thème clair/sombre" onclick="var d=document.documentElement,c=d.getAttribute('data-theme'),sys=matchMedia('(prefers-color-scheme: dark)').matches,cur=c||(sys?'dark':'light'),n=cur==='dark'?'light':'dark';d.setAttribute('data-theme',n);localStorage.setItem('mq-theme',n);">◐</button>
+        <label for="menu-toggle" class="hamburger-btn" aria-label="Menu"><span></span></label>
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <a href="index.html" class="nav-link">Accueil</a>
+      <a href="competences.html" class="nav-link">Compétences</a>
+      <a href="parcours.html" class="nav-link">Parcours</a>
+      <a href="projets.html" class="nav-link active">Projets</a>
+      <a href="stage.html" class="nav-link">Stage</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="a-propos.html" class="nav-link">À propos</a>
+    </div>
+  </nav>
+<main>
+
+<section class="section">
+  <div class="container">
+    <div class="section-label">Réalisations</div>
+    <h2 class="section-title">Projets</h2>
+
+    <div class="subsection-label">Perso</div>
+    <h3 class="subsection-title" style="margin-bottom:2rem;">Projets personnels</h3>
+
+    <div class="year-section">
+      <div class="year-head"><span class="year">2026 - 2027</span><span class="sub">Réalisé en dehors des cours</span></div>
+      <div class="grid-auto-22">
+        <a href="projets/portfolio.html" class="project-card">
+  <div class="row">
+    <div>
+      <div class="badge">Projet perso</div>
+      <h3>Ce portfolio 🌐</h3>
+    </div>
+    <span class="arrow">↗</span>
+  </div>
+  <p>Mon site personnel, conçu et mis en ligne par mes soins : pages en français et en anglais, thème clair/sombre, hébergement sur Vercel et nom de domaine mehdiqament.dev.</p>
+  <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Vercel</span><span class="tag">Web</span></div>
+</a>
+      </div>
+    </div>
+
+    <div class="subsection-label">Parcours</div>
+    <h3 class="subsection-title" style="margin-bottom:2rem;">Projets scolaires</h3>
+
+    <div class="year-section">
+      <div class="year-head"><span class="year">2024 - 2025</span><span class="sub">Terminale STI2D · Option SIN</span></div>
+      <div class="grid-auto-22">
+        <a href="projets/robot-sti2d.html" class="project-card">
+  <div class="row">
+    <div>
+      <div class="badge">STI2D</div>
+      <h3>Robot rover 🤖</h3>
+    </div>
+    <span class="arrow">↗</span>
+  </div>
+  <p>Développement d’un rover inspiré de robots comme Perseverance, équipé d’un bras articulé et d’une pince, avec différents capteurs et composants embarqués. Programmation des mouvements du bras et de la pince, ainsi que développement d’une application avec Arduino.
+</p>
+  <div class="tags"><span class="tag">Arduino</span><span class="tag">SIN</span><span class="tag">Robotique</span></div>
+  <div class="status">Terminé</div>
+</a>
+      </div>
+    </div>
+
+    <div class="year-section">
+      <div class="year-head"><span class="year">2025 - 2026</span><span class="sub">BUT Informatique - 1ère année</span></div>
+      <div class="grid-auto-22">
+        <a href="projets/fromagerie.html" class="project-card">
+  <div class="row">
+    <div>
+      <div class="badge">SAÉ</div>
+      <h3>Application de vente - Fromagerie 🧀</h3>
+    </div>
+    <span class="arrow">↗</span>
+  </div>
+  <p>Application Java Swing simulant une application de vente de fromages : gestion du stock, panier, filtres, génération de facture.</p>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Swing</span><span class="tag">JSON</span></div>
+  <div class="status">Terminé</div>
+</a>
+        <a href="projets/gps-nmea.html" class="project-card">
+  <div class="row">
+    <div>
+      <div class="badge">SAÉ</div>
+      <h3>Analyseur de trames GPS NMEA 🛰️</h3>
+    </div>
+    <span class="arrow">↗</span>
+  </div>
+  <p>Parseur en langage C de trames GPS NMEA : vérification, extraction des champs, conversion de coordonnées et formatage de l'heure.</p>
+  <div class="tags"><span class="tag">C</span><span class="tag">Shell</span><span class="tag">Makefile</span></div>
+  <div class="status">Terminé</div>
+</a>
+      </div>
+    </div>
+
+    <div class="year-section">
+      <div class="year-head"><span class="year">2026 - 2027</span><span class="sub">BUT Informatique - 2ème année · Parcours RAPP</span></div>
+      <div class="grid-auto-22">
+        <div class="status-card active">
+  <div class="row">
+    <div>
+      <div class="badge">3ème semestre</div>
+      <h3>Méthodes agiles</h3>
+    </div>
+    <span class="pill">En cours</span>
+  </div>
+  <p>SAÉ actuellement réalisée dans le cadre du BUT Informatique, avec une organisation basée sur les méthodes agiles.</p>
+  <div class="tags"><span class="tag">Méthodes agiles</span></div>
+</div>
+        <div class="status-card upcoming">
+  <div class="row">
+    <div>
+      <div class="badge">4ème semestre</div>
+      <h3>Prochain projet</h3>
+    </div>
+    <span class="pill">À venir</span>
+  </div>
+  <p>De nouveaux projets réalisés dans le cadre du parcours RAPP arriveront prochainement.</p>
+  <div class="tags"><span class="tag muted">-</span><span class="tag muted">-</span><span class="tag muted">-</span></div>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer><span>mehdiqament.dev · 2026</span></footer>
+</body>
+</html>

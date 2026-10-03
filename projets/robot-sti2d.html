@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Robot rover · Mehdi Bouin</title>
+
+<script>
+(function(){var s=localStorage.getItem('mq-theme');if(s)document.documentElement.setAttribute('data-theme',s);})();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+
+</head>
+
+<body>
+
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+  <nav class="topnav">
+    <div class="topnav-inner">
+
+  <a href="../index.html" class="logo">mehdiqament.dev</a>
+
+  <div class="nav-links hide-sm">
+    <a href="../index.html" class="nav-link">Accueil</a>
+    <a href="../competences.html" class="nav-link">Compétences</a>
+    <a href="../parcours.html" class="nav-link">Parcours</a>
+    <a href="../projets.html" class="nav-link">Projets</a>
+    <a href="../stage.html" class="nav-link">Stage</a>
+    <a href="../contact.html" class="nav-link">Contact</a>
+    <a href="../a-propos.html" class="nav-link">À propos</a>
+  </div>
+
+  <div class="nav-controls">
+
+    <a href="../en/projets/robot-sti2d.html" class="lang-switch" aria-label="Changer de langue / Switch language">EN</a>
+
+    <button type="button" class="theme-toggle"
+      aria-label="Basculer le thème clair/sombre"
+      onclick="var d=document.documentElement,c=d.getAttribute('data-theme'),sys=matchMedia('(prefers-color-scheme: dark)').matches,cur=c||(sys?'dark':'light'),n=cur==='dark'?'light':'dark';d.setAttribute('data-theme',n);localStorage.setItem('mq-theme',n);">
+      ◐
+    </button>
+
+    <label for="menu-toggle" class="hamburger-btn" aria-label="Menu"><span></span></label>
+
+  </div>
+</div>
+
+<div class="mobile-menu">
+  <a href="../index.html" class="nav-link">Accueil</a>
+  <a href="../competences.html" class="nav-link">Compétences</a>
+  <a href="../parcours.html" class="nav-link">Parcours</a>
+  <a href="../projets.html" class="nav-link">Projets</a>
+  <a href="../stage.html" class="nav-link">Stage</a>
+  <a href="../contact.html" class="nav-link">Contact</a>
+  <a href="../a-propos.html" class="nav-link">À propos</a>
+</div>
+
+  </nav>
+
+<main>
+
+<article class="detail-article">
+
+  <div class="detail-inner">
+
+<a href="../projets.html" class="back-link">← Projets</a>
+
+<div class="detail-kicker">
+  Terminale STI2D · Option SIN · Projet d'équipe
+</div>
+
+<h1 class="detail-title">Robot rover 🤖</h1>
+
+<div class="detail-tags">
+  <div class="detail-tag">
+    <span class="abbr">SIN</span>Système d'information et numérique
+  </div>
+
+  <div class="detail-tag">
+    <span class="abbr">∞</span>Arduino
+  </div>
+
+  <div class="detail-tag">
+    <span class="abbr">🤖</span>Robotique
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="detail-block">
+
+  <div class="label">Le projet</div>
+
+  <p>
+    Projet réalisé en <strong>Terminale STI2D</strong>, option <strong>SIN</strong>,
+    autour de la conception et de la programmation d'un rover mobile inspiré
+    de robots d'exploration comme <strong>Perseverance</strong>.
+  </p>
+
+  <p>
+    Le rover pouvait <strong>avancer et reculer</strong> tout en se dirigeant
+    vers la droite ou la gauche. Il était contrôlé depuis un
+    <strong>téléphone Android</strong> via <strong>Bluetooth</strong>, grâce à
+    une application permettant de contrôler ses déplacements, son bras et sa
+    pince, mais également d'afficher les données récupérées par les différents
+    capteurs.
+  </p>
+
+  <p>
+    Le rover était équipé d'un <strong>bras articulé</strong> composé de
+    plusieurs parties motorisées par des <strong>servomoteurs</strong>.
+    Le bras pouvait pivoter, monter et descendre, tandis qu'une
+    <strong>pince</strong> permettait de saisir un petit objet.
+  </p>
+
+  <p>
+    Différents capteurs permettaient de relever la
+    <strong>température</strong>, l'<strong>humidité</strong> et le
+    <strong>niveau de batterie</strong>. Une mesure de la qualité de l'air
+    était également envisagée, mais n'a pas pu être ajoutée par manque de temps.
+  </p>
+
+  <p>
+    Le projet devait notamment permettre au rover de se déplacer et de
+    <strong>récupérer un petit objet</strong> lors de la démonstration finale.
+  </p>
+
+</div>
+
+<div class="detail-block">
+
+  <div class="label">Répartition de l'équipe</div>
+
+  <ul class="feature-list">
+
+    <li>
+      <strong>Informatique (2 personnes)</strong> - programmation du rover
+      et développement de l'application.
+    </li>
+
+    <li>
+      <strong>Moi</strong> - programmation du bras et de la pince,
+      gestion des capteurs et développement de la partie de l'application
+      permettant de les contrôler et d'afficher leurs données.
+    </li>
+
+    <li>
+      <strong>Mon coéquipier</strong> - programmation du déplacement
+      du rover.
+    </li>
+
+    <li>
+      <strong>Conception (2 personnes)</strong> - conception et réalisation
+      de la structure du rover.
+    </li>
+
+    <li>
+      <strong>Électricité (1 personne)</strong> - câblage et gestion
+      de la partie électrique du projet.
+    </li>
+
+  </ul>
+
+</div>
+
+<div class="detail-block">
+
+  <div class="label">Ce que j'ai fait</div>
+
+  <ul class="feature-list">
+
+    <li>
+      Programmation en <strong>Arduino</strong> des mouvements du bras
+      avec des servomoteurs.
+    </li>
+
+    <li>
+      Gestion de la rotation du bras ainsi que de ses mouvements
+      de montée et de descente.
+    </li>
+
+    <li>
+      Programmation de l'ouverture et de la fermeture de la
+      <strong>pince</strong>.
+    </li>
+
+    <li>
+      Intégration du contrôle du bras et de la pince dans
+      l'<strong>application Android</strong>.
+    </li>
+
+    <li>
+      Gestion et affichage des données des
+      <strong>capteurs</strong> : température, humidité et batterie.
+    </li>
+
+    <li>
+      Réalisation d'une partie du <strong>câblage</strong> nécessaire
+      au fonctionnement du bras et des capteurs.
+    </li>
+
+    <li>
+      Communication entre l'application Android et l'
+      <strong>Arduino Uno</strong> via Bluetooth.
+    </li>
+
+    <li>
+      Tests et ajustements afin de vérifier le bon fonctionnement
+      du bras, de la pince et des capteurs.
+    </li>
+
+  </ul>
+
+</div>
+
+<div class="detail-block">
+
+  <div class="label">Ce que j'ai appris</div>
+
+  <p>
+    Ce projet était l'un de mes premiers projets de cette ampleur et
+    représentait une première expérience importante dans le domaine de
+    l'<strong>électronique</strong> et du <strong>câblage</strong>.
+    Les premières étapes ont été difficiles, notamment pour comprendre
+    le fonctionnement des différents composants et leur connexion avec
+    le programme.
+  </p>
+
+  <p>
+    Avec les différents tests et les ajustements réalisés au cours du
+    projet, j'ai progressivement réussi à maîtriser le fonctionnement
+    du bras et des capteurs. Voir le bras fonctionner correctement et
+    réussir à contrôler l'ensemble depuis l'application a été une
+    étape particulièrement satisfaisante dans le projet.
+  </p>
+
+</div>
+
+  </div>
+
+</article>
+
+</main>
+
+<footer>
+  <span>mehdiqament.dev · 2026</span>
+</footer>
+
+</body>
+</html>

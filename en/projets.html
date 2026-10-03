@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects · Mehdi Bouin</title>
+<script>
+(function(){var s=localStorage.getItem('mq-theme');if(s)document.documentElement.setAttribute('data-theme',s);})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+</head>
+<body>
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  <nav class="topnav">
+    <div class="topnav-inner">
+      <a href="index.html" class="logo">mehdiqament.dev</a>
+      <div class="nav-links hide-sm">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="competences.html" class="nav-link">Skills</a>
+      <a href="parcours.html" class="nav-link">Journey</a>
+      <a href="projets.html" class="nav-link active">Projects</a>
+      <a href="stage.html" class="nav-link">Internship</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="a-propos.html" class="nav-link">About</a>
+      </div>
+      <div class="nav-controls">
+        <a href="../projets.html" class="lang-switch" aria-label="Changer de langue / Switch language">FR</a>
+        <button type="button" class="theme-toggle" aria-label="Basculer le thème clair/sombre" onclick="var d=document.documentElement,c=d.getAttribute('data-theme'),sys=matchMedia('(prefers-color-scheme: dark)').matches,cur=c||(sys?'dark':'light'),n=cur==='dark'?'light':'dark';d.setAttribute('data-theme',n);localStorage.setItem('mq-theme',n);">◐</button>
+        <label for="menu-toggle" class="hamburger-btn" aria-label="Menu"><span></span></label>
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="competences.html" class="nav-link">Skills</a>
+      <a href="parcours.html" class="nav-link">Journey</a>
+      <a href="projets.html" class="nav-link active">Projects</a>
+      <a href="stage.html" class="nav-link">Internship</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="a-propos.html" class="nav-link">About</a>
+    </div>
+  </nav>
+<main>
+
+<section class="section">
+  <div class="container">
+    <div class="section-label">Work</div>
+    <h2 class="section-title">Projects</h2>
+
+    <div class="subsection-label">Personal</div>
+    <h3 class="subsection-title" style="margin-bottom:2rem;">Personal projects</h3>
+
+    <div class="year-section">
+      <div class="year-head"><span class="year">2026 - 2027</span><span class="sub">Built outside of classes</span></div>
+      <div class="grid-auto-22">
+        <a href="projets/portfolio.html" class="project-card">
+  <div class="row">
+    <div>
+      <div class="badge">Personal project</div>
+      <h3>This portfolio 🌐</h3>
+    </div>
+    <span class="arrow">↗</span>
+  </div>
+  <p>My personal website, designed and published by myself: pages in French and English, light/dark theme, hosted on Vercel with the mehdiqament.dev domain name.</p>
+  <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Vercel</span><span class="tag">Web</span></div>
+</a>
+      </div>
+    </div>
+
+    <div class="subsection-label">Background</div>
+    <h3 class="subsection-title" style="margin-bottom:2rem;">School projects</h3>
+
+    <div class="year-section">
+      <div class="year-head"><span class="year">2024 - 2025</span><span class="sub">STI2D final year · SIN option</span></div>
+      <div class="grid-auto-22">
+        <a href="projets/robot-sti2d.html" class="project-card">
+  <div class="row">
+    <div>
+      <div class="badge">STI2D</div>
+      <h3>Rover robot 🤖</h3>
+    </div>
+    <span class="arrow">↗</span>
+  </div>
+  <p>Development of a rover inspired by robots such as Perseverance, featuring an articulated arm and a gripper, with various sensors and onboard components. Programming of the arm and gripper movements and development of an Arduino-based application.</p>
+  <div class="tags"><span class="tag">Arduino</span><span class="tag">SIN</span><span class="tag">Robotics</span></div>
+  <div class="status">Finished</div>
+</a>
+      </div>
+    </div>
+
+    <div class="year-section">
+      <div class="year-head"><span class="year">2025 - 2026</span><span class="sub">BUT Computer Science - 1st year</span></div>
+      <div class="grid-auto-22">
+        <a href="projets/fromagerie.html" class="project-card">
+  <div class="row">
+    <div>
+      <div class="badge">SAÉ</div>
+      <h3>Sales application - Cheese shop 🧀</h3>
+    </div>
+    <span class="arrow">↗</span>
+  </div>
+  <p>Java Swing application simulating a cheese sales app: stock management, cart, filters, invoice generation.</p>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Swing</span><span class="tag">JSON</span></div>
+  <div class="status">Finished</div>
+</a>
+        <a href="projets/gps-nmea.html" class="project-card">
+  <div class="row">
+    <div>
+      <div class="badge">SAÉ</div>
+      <h3>GPS NMEA frame analyzer 🛰️</h3>
+    </div>
+    <span class="arrow">↗</span>
+  </div>
+  <p>C parser for GPS NMEA frames: validation, field extraction, coordinate conversion and time formatting.</p>
+  <div class="tags"><span class="tag">C</span><span class="tag">Shell</span><span class="tag">Makefile</span></div>
+  <div class="status">Finished</div>
+</a>
+      </div>
+    </div>
+
+    <div class="year-section">
+      <div class="year-head"><span class="year">2026 - 2027</span><span class="sub">BUT Computer Science - 2nd year · RAPP track</span></div>
+      <div class="grid-auto-22">
+        <div class="status-card active">
+  <div class="row">
+    <div>
+      <div class="badge">3rd semester</div>
+      <h3>Agile methods</h3>
+    </div>
+    <span class="pill">In progress</span>
+  </div>
+  <p>SAÉ currently being carried out as part of the BUT Informatique, organized around agile methods.</p>
+  <div class="tags"><span class="tag">Agile methods</span></div>
+</div>
+        <div class="status-card upcoming">
+  <div class="row">
+    <div>
+      <div class="badge">4th semester</div>
+      <h3>Next project</h3>
+    </div>
+    <span class="pill">Coming soon</span>
+  </div>
+  <p>New projects from the RAPP track will be added soon.</p>
+  <div class="tags"><span class="tag muted">-</span><span class="tag muted">-</span><span class="tag muted">-</span></div>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer><span>mehdiqament.dev · 2026</span></footer>
+</body>
+</html>

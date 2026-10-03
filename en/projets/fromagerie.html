@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cheese shop project · Mehdi Bouin</title>
+<script>
+(function(){var s=localStorage.getItem('mq-theme');if(s)document.documentElement.setAttribute('data-theme',s);})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../../style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+</head>
+<body>
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  <nav class="topnav">
+    <div class="topnav-inner">
+      <a href="../index.html" class="logo">mehdiqament.dev</a>
+      <div class="nav-links hide-sm">
+      <a href="../index.html" class="nav-link">Home</a>
+      <a href="../competences.html" class="nav-link">Skills</a>
+      <a href="../parcours.html" class="nav-link">Journey</a>
+      <a href="../projets.html" class="nav-link">Projects</a>
+      <a href="../stage.html" class="nav-link">Internship</a>
+      <a href="../contact.html" class="nav-link">Contact</a>
+      <a href="../a-propos.html" class="nav-link">About</a>
+      </div>
+      <div class="nav-controls">
+        <a href="../../projets/fromagerie.html" class="lang-switch" aria-label="Changer de langue / Switch language">FR</a>
+        <button type="button" class="theme-toggle" aria-label="Basculer le thème clair/sombre" onclick="var d=document.documentElement,c=d.getAttribute('data-theme'),sys=matchMedia('(prefers-color-scheme: dark)').matches,cur=c||(sys?'dark':'light'),n=cur==='dark'?'light':'dark';d.setAttribute('data-theme',n);localStorage.setItem('mq-theme',n);">◐</button>
+        <label for="menu-toggle" class="hamburger-btn" aria-label="Menu"><span></span></label>
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <a href="../index.html" class="nav-link">Home</a>
+      <a href="../competences.html" class="nav-link">Skills</a>
+      <a href="../parcours.html" class="nav-link">Journey</a>
+      <a href="../projets.html" class="nav-link">Projects</a>
+      <a href="../stage.html" class="nav-link">Internship</a>
+      <a href="../contact.html" class="nav-link">Contact</a>
+      <a href="../a-propos.html" class="nav-link">About</a>
+    </div>
+  </nav>
+<main>
+
+<article class="detail-article">
+  <div class="detail-inner">
+    <a href="../projets.html" class="back-link">← Projects</a>
+
+    <div class="detail-kicker">SAÉ · School project</div>
+    <h1 class="detail-title">Sales application<br>Cheese shop 🧀</h1>
+
+    <div class="detail-tags"><div class="detail-tag"><span class="abbr">☕</span>Java</div><div class="detail-tag"><span class="abbr">UI</span>Swing</div><div class="detail-tag"><span class="abbr">{}</span>JSON</div></div>
+
+    <div class="detail-actions">
+      <a href="https://github.com/mehdiqament/sae-vente-fromages" target="_blank" rel="noopener noreferrer" class="btn-code">&lt;/&gt; View code</a>
+      <a href="#demo" class="btn-code">▶ Watch the test</a>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="detail-block">
+      <div class="label">The project</div>
+      <p>Built as part of a SAÉ (Learning and Assessment Situation), this application simulates an online cheese shop. Developed entirely in Java with a Swing graphical interface, it relies on a multi-window architecture using nested <strong>JDialogs</strong> for each step of the customer journey - browsing the catalog, managing the cart, entering information and editing the invoice.</p>
+    </div>
+
+    <div class="detail-block">
+      <div class="label">Features</div>
+      <ul class="feature-list"><li>Cheese catalog with filters by milk type and format (half / whole)</li><li>Shopping cart respecting stock limits, with edit or clear options</li><li>Customer information form</li><li>Summary invoice generation with print option</li></ul>
+    </div>
+
+    <div class="detail-block">
+      <div class="label">Tech stack</div>
+      <div style="display:flex; flex-wrap:wrap; gap:0.75rem;"><div class="skill-pill-lg"><span class="abbr">☕</span>Java</div><div class="skill-pill-lg"><span class="abbr">UI</span>Swing</div><div class="skill-pill-lg"><span class="abbr">{}</span>JSON</div></div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="detail-block">
+      <div class="label">Demo</div>
+      <div id="demo">
+        <div class="demo-frame">
+          <iframe src="https://player.cloudinary.com/embed/?cloud_name=dk2iacpoa&public_id=rec_java_bj1zz2&profile=cld-default" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
+        <div class="demo-caption"><p>Walkthrough of the cheese ordering interface in action: cart management, shipping cost calculation and customer form validation.</p></div>
+      </div>
+    </div>
+
+    <div class="detail-block">
+      <div class="label">What the video shows</div>
+      <ul class="feature-list"><li>Empty cart: a message is automatically shown if the cart is empty at checkout.</li><li>Three types of cheese available: cow, goat and sheep milk.</li><li>Limited stock: a warning message appears if the requested quantity exceeds stock, and "Out of stock" appears once stock reaches zero.</li><li>Quantity editing in the cart: the matching cheese's stock updates in real time.</li><li>Shipping costs: free for orders over €120, otherwise a fee applies.</li><li>Three carriers available: Chronorelais, Chronofresh and Colissimo.</li><li>Full customer form: name, surname, address, postal code, city, phone, email, payment method and newsletter opt-in.</li><li>Invoice window: full summary with customer details, cart contents, cheese total and shipping cost if the order is under €120.</li><li>Responsive interface: all windows adapt to screen size.</li></ul>
+    </div>
+  </div>
+</article>
+
+</main>
+<footer><span>mehdiqament.dev · 2026</span></footer>
+</body>
+</html>
